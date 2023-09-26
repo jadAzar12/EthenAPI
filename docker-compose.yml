@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ethenapi:
+    image: ${DOCKER_REGISTRY-}ethenapi
+    build:
+      context: .
+      dockerfile: EthenAPI/Dockerfile
